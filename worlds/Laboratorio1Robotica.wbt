@@ -1,0 +1,38 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.4149129151207825 0.3637413629795985 0.8339901040921999 1.8789659649446935
+  position 0.6309529678246211 -2.487460267321768 3.4358803113169025
+}
+E-puck {
+  hidden position_0_0 88.48176562609459
+  hidden position_0_1 55.17553053712894
+  hidden linearVelocity_0 -0.08394082995022834 0.06312291417520341 -5.173900301015643e-10
+  hidden angularVelocity_0 -0.0010226388967202406 -0.001354138855177481 0.1758226031885208
+  hidden rotation_1 0 1 0 0.5171713255803749
+  hidden rotation_2 0 1 0 4.910048079692251
+  translation 0.0804740031208261 0.41934747567431047 -6.652316206764985e-05
+  rotation -1.497961344701608e-05 0.0005520062273614876 0.9999998475323565 2.5008449129275983
+  controller "my_controller2"
+  turretSlot [
+    Pen {
+      inkColor 0 1 0
+      inkDensity 1
+      leadSize 2
+      maxDistance 0.1
+    }
+  ]
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+}

@@ -1,0 +1,5 @@
+# Archivos temporales de Webots
+*.pico
+*.lock
+__pycache__/
+.DS_Store
