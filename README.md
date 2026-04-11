@@ -3,7 +3,7 @@
 Integrantes:
 - Vicente Aburto Falcón
 - Yamil Soleman Fernandez
-- Vicente Quezada Nills
+- Vicente Nills Quezada Gallardo
 - Sebastián García Valdebenito
 - Ignacio Matus de la Parra
 ---
