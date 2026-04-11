@@ -9,16 +9,10 @@ Integrantes:
 ---
 
 ## Contenidos del documento
-1. a
-2. b
-3. c
-4. d
-5. e
 ---
+
 ## 1. Descripción del Laboratorio
-
-
-
+El Laboratorio 1 se centra en la simulación interactiva de un robot móvil diferencial (modelo e-puck) utilizando el entorno Webots. El objetivo principal es comprender y validar el comportamiento cinemático del robot mediante la programación de un controlador en Python que manipula de forma independiente la velocidad de sus dos ruedas motrices. Al alterar las velocidades de los actuadores (vl​ y vr​), el sistema ejecuta diversas trayectorias secuenciales —tales como líneas rectas, curvas, círculos y rotaciones estáticas para dibujar un cuadrado— evidenciando la relación directa entre la formulación matemática y el desplazamiento físico. Para documentar los resultados, se habilitó el dispositivo virtual 'Pen', permitiendo trazar visualmente la ruta exacta del robot sobre la arena de simulación.
 ---
 ## 2. ¿Cómo ejecutar la simulación en Webots?
 
@@ -39,7 +33,7 @@ Integrantes:
   - Cuando existe una disparidad entre las velocidades de ambas ruedas, la trayectoria del robot deja de ser rectilínea y se vuelve curva, inclinándose siempre hacia el lado de la rueda que se desplaza más lento. Esto sucede porque la rueda con mayor velocidad recorre una distancia superior en el mismo intervalo de tiempo, lo que genera un momento de giro que obliga al chasis del robot a pivotar sobre el lado de menor tracción, modificando gradualmente su orientación de manera constante.
 
 - ¿Qué ocurre cuando una rueda gira en sentido opuesto a la otra?
-  - resp
+  - Cuando una rueda gira en una dirección y la otra en el sentido contrario con la misma intensidad, el robot pierde su capacidad de avanzar o retroceder de forma lineal, realizando en su lugar una rotación estática sobre su propio eje central. Esto ocurre porque los desplazamientos de ambas ruedas se anulan mutuamente respecto al avance del chasis, pero al tirar de los extremos del robot en direcciones opuestas, generan un par de giro continuo que obliga al sistema a pivotar en el mismo punto, permitiendo cambiar la orientación sin modificar la posición en el espacio.
 
 - ¿Qué tipo de movimiento permite dibujar un círculo?
-  - resp  
+  - Para que el robot logre dibujar un círculo perfecto, es estrictamente necesario ejecutar un movimiento curvo manteniendo velocidades asimétricas pero constantes a lo largo de todo el trayecto. Al configurar una rueda para que gire más rápido que la otra (o incluso deteniendo una por completo), el robot tiende a inclinarse hacia el lado de menor velocidad; si esta diferencia de tracción no sufre ninguna alteración con el tiempo, el radio de giro se mantendrá completamente estable e invariable, obligando al chasis a trazar una curva continua que eventualmente se cerrará sobre sí misma completando la circunferencia.
