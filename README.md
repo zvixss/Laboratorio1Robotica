@@ -4,8 +4,8 @@ Integrantes:
 - Vicente Aburto Falcón
 - Yamil Soleman Fernandez
 - Vicente Quezada Nills
-- Sebastián García  valdepene
-- Ignacio Matus de la Perra
+- Sebastián García Valdebenito
+- Ignacio Matus de la Parra
 ---
 
 ## Contenidos del documento
