@@ -17,7 +17,7 @@ Integrantes:
 ## 2. ¿Cómo ejecutar la simulación en Webots?
 - Para ejecutar nuestra simulacion de manera correcta y observar el comportamiento cinemático del robot, se deben seguir los siguientes pasos en el entorno de desarrollo:
   1. Cargar el Entorno: Abrir el software Webots y cargar el archivo del mundo (.wbt) que contiene la pista de pruebas y el robot diferencial (en este caso, el modelo e-puck).
-  2. Configurar el Controlador: En el panel izquierdo (Árbol de Escena o Scene Tree), desplegar las propiedades del robot e-puck, buscar el campo controller y seleccionar el script de Python desarrollado para este laboratorio ('my_controller2'). Este paso es crucial para asegurar que el robot ejecute nuestra lógica y no un comportamiento por defecto.
+  2. Configurar el Controlador: En el panel izquierdo (Árbol de Escena o Scene Tree), desplegar las propiedades del robot e-puck, buscar el campo controller y seleccionar el script de Python desarrollado para este laboratorio ('my_controller2'). Este paso es muy importante para asegurar que el robot ejecute nuestra lógica y no un comportamiento por defecto.
   3. Parámetros de Velocidad: Dentro del código del controlador (Python), se deben definir o ajustar las variables de velocidad para cada actuador: $v_l$ para el motor izquierdo y $v_r$ para el motor derecho. Dependiendo del experimento que se desee ejecutar (movimiento recto, curva o rotación), estas velocidades deberán ser iguales, diferentes u opuestas.
   4. Ejecución: Presionar el botón de "Play" (o "Step" para un análisis paso a paso) en la interfaz superior de Webots.
 
