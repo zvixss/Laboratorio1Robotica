@@ -34,7 +34,7 @@ Integrantes:
   - ### A. Validación de Movimientos Básicos
     Se logró controlar el desplazamiento del robot manipulando las velocidades lineales de los motores izquierdo ($v_l$) y derecho ($v_r$):
       - Línea Recta: Al configurar $v_l = 4.0$ y $v_r = 4.0$, el robot mantuvo una trayectoria rectilínea. Esto confirma que cuando $v_l = v_r$, la velocidad angular $\omega$ es $0$.
-      - Trayectoria Curva: Con $v_l = 5.0$ y $v_r = 5.5$, se observó un arco suave inclinado hacia la izquierda, validando que el robot pivota hacia el lado de la rueda más lenta.
+      - Trayectoria Curva: Con $v_l = 5.0$ y $v_r = 2.0$, se observó un arco suave inclinado hacia la izquierda, validando que el robot pivota hacia el lado de la rueda más lenta.
       - Círculo: Se configuró $v_l = 4.0$ y $v_r = 0.0$. Al dejar una rueda estática, el robot tiene una trayectoria circular perfecta con un radio dependiente de la distancia entre ruedas $L$.
 
   - ### B. Ejecución del Desafío Opcional: Cuadrado
