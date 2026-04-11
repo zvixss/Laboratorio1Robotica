@@ -15,7 +15,17 @@ Integrantes:
 - El Laboratorio 1 se centra en la simulación interactiva de un robot móvil diferencial (modelo e-puck) utilizando el entorno Webots. El objetivo principal es comprender y validar el comportamiento cinemático del robot mediante la programación de un controlador en Python que manipula de forma independiente la velocidad de sus dos ruedas motrices. Al alterar las velocidades de los actuadores (vl​ y vr​), el sistema ejecuta diversas trayectorias secuenciales —tales como líneas rectas, curvas, círculos y rotaciones estáticas para dibujar un cuadrado— evidenciando la relación directa entre la formulación matemática y el desplazamiento físico. Para documentar los resultados, se habilitó el dispositivo virtual 'Pen', permitiendo trazar visualmente la ruta exacta del robot sobre la arena de simulación.
 ---
 ## 2. ¿Cómo ejecutar la simulación en Webots?
-- Para ejecutar nuestra simulacion
+- Para ejecutar nuestra simulacion de manera correcta y observar el comportamiento cinemático del robot, se deben seguir los siguientes pasos en el entorno de desarrollo:
+  1. Cargar el Entorno: Abrir el software Webots y cargar el archivo del mundo (.wbt) que contiene la pista de pruebas y el robot diferencial (en este caso, el modelo e-puck).
+  2. Configurar el Controlador: En el panel izquierdo (Árbol de Escena o Scene Tree), desplegar las propiedades del robot e-puck, buscar el campo controller y seleccionar el script de Python desarrollado para este laboratorio ('my_controller2'). Este paso es crucial para asegurar que el robot ejecute nuestra lógica y no un comportamiento por defecto.
+  3. Parámetros de Velocidad: Dentro del código del controlador (Python), se deben definir o ajustar las variables de velocidad para cada actuador: $v_l$ para el motor izquierdo y $v_r$ para el motor derecho. Dependiendo del experimento que se desee ejecutar (movimiento recto, curva o rotación), estas velocidades deberán ser iguales, diferentes u opuestas.
+  4. Ejecución: Presionar el botón de "Play" (o "Step" para un análisis paso a paso) en la interfaz superior de Webots.
+
+- Si al darle "Play" el robot no se mueve o la consola Webots arroja un error indicando que no se reconoce el comando, es probable que Webots no esté detectando la versión de Python instalada. Para solucionarlo:
+  - Ir al menú superior y seleccionar Tools > Preferences.
+  - Buscar el apartado que dice Python command.
+  - Ingresar el comando exacto o la ruta del ejecutable de Python de su dispositivo (se recomienda python 3.11.0).
+  - Aplicar los cambios, recargar el mundo y volver a ejecutar la simulación.
 
 
 ---
