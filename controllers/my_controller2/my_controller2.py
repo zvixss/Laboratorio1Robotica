@@ -21,7 +21,7 @@ TIEMPO_GIRO_90 = 0.85
 inicio_cuadrado = 14.0 
 
 while robot.step(timestep) != -1:
-    tiempo = 4
+    tiempo = robot.getTime()
     
     # DESAFÍO 1: Recta (0 a 3 segundos)
     if tiempo < 3.0:
