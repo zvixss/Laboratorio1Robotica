@@ -30,7 +30,21 @@ Integrantes:
 
 ---
 ## 3. Resultados Obtenidos
--
+- Tras implementar el controlador en Python y ejecutar la simulación en Webots, se validaron experimentalmente los principios del modelo cinemático del robot diferencial. Los resultados se dividen en los desafios propuestos:
+  - ### A. Validación de Movimientos Básicos
+    Se logró controlar el desplazamiento del robot manipulando las velocidades lineales de los motores izquierdo ($v_l$) y derecho ($v_r$):
+      - Línea Recta: Al configurar $v_l = 4.0$ y $v_r = 4.0$, el robot mantuvo una trayectoria rectilínea. Esto confirma que cuando $v_l = v_r$, la velocidad angular $\omega$ es $0$.
+      - Trayectoria Curva: Con $v_l = 5.0$ y $v_r = 5.5$, se observó un arco suave inclinado hacia la izquierda, validando que el robot pivota hacia el lado de la rueda más lenta.
+      - Círculo: Se configuró $v_l = 4.0$ y $v_r = 0.0$. Al dejar una rueda estática, el robot tiene una trayectoria circular perfecta con un radio dependiente de la distancia entre ruedas $L$.
+
+  - ### B. Ejecución del Desafío Opcional: Cuadrado
+    Para simular la trayectoria de un cuadrado, se utilizó una lógica de control basada en tiempo relativo y ciclos de movimiento:
+      - Fase de Avance: Durante un intervalo de $2.0$ segundos, el robot avanzó a una velocidad constante de $4.0$.
+      - Fase de Giro: Se implementó una rotación estática sobre el propio eje configurando velocidades opuestas ($v_l = -3.0$, $v_r = 3.0$) durante un periodo calibrado de $0.85$ segundos para lograr el cambio de dirección necesario.
+      - Resultado: El robot completó los cuatro ciclos de forma secuencial, regresando a una posición cercana al punto de origen, demostrando la efectividad de la programación por estados temporales.
+   
+    - ### C. Comparación de la Trayectoria con y sin Perturbaciones
+    XXX
 
 
 ---
