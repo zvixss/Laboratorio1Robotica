@@ -4,7 +4,7 @@ Integrantes:
 - Vicente Aburto Falcón
 - Yamil Soleman Fernandez
 - Vicente Quezada Nills
-- Sebastián García  B
+- Sebastián García  valdepene
 - Ignacio Matus de la Perra
 ---
 
