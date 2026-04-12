@@ -46,7 +46,11 @@ Integrantes:
     - ### C. Comparación de la Trayectoria con y sin Perturbaciones
     XXX
 
-<video src="https://github.com/zvixss/Laboratorio1Robotica/raw/main/VideoMuestra.mp4" width="100%" controls></video>
+
+### Video de Muestra:
+
+>https://github.com/user-attachments/assets/c6eb3f55-d192-45d5-ae45-f7dd25ba4fcb
+
 ---
 ## 4. Preguntas de análisis
 
