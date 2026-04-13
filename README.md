@@ -61,6 +61,19 @@ Tras implementar el controlador en Python y ejecutar la simulación en Webots, s
     
     Como se observa en la comparación visual, el modelo cinemático ideal (izquierda) finaliza su trayectoria exactamente en la posición calculada. Sin embargo, al aplicar perturbaciones (derecha), el robot sufre una clara desviación geométrica (drift). Esto demuestra el principio fundamental de que pequeñas variaciones en las velocidades generan grandes cambios acumulativos en la posición final del robot.
 
+    <div align="center">
+      <table>
+        <tr>
+          <td align="center"><b>Trayectoria Ideal (Sin Ruido)</b></td>
+          <td align="center"><b>Trayectoria Realista (Con Perturbaciones)</b></td>
+        </tr>
+        <tr>
+          <td><img width="861" height="656" alt="EstadoFinalSinPerturbaciones" src="https://github.com/user-attachments/assets/318fde35-f88c-4897-bf22-548e5b38d4ac" /></td>
+          <td><img width="862" height="654" alt="EstadoFinalConPerturbaciones" src="https://github.com/user-attachments/assets/e734c267-1700-4b6c-bb6e-c58711c653c6" /></td>
+        </tr>
+      </table>
+    </div>
+
 ### Video de Muestra:
 
 >https://github.com/user-attachments/assets/c6eb3f55-d192-45d5-ae45-f7dd25ba4fcb
