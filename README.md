@@ -76,7 +76,9 @@ Tras implementar el controlador en Python y ejecutar la simulación en Webots, s
 
 ### Video de Muestra:
 
->https://github.com/user-attachments/assets/c6eb3f55-d192-45d5-ae45-f7dd25ba4fcb
+Para ver el video, presionar la siguiente imagen:
+
+[![Demostración Webots](https://img.youtube.com/vi/sn9dWZAoFY0/0.jpg)](https://youtu.be/sn9dWZAoFY0)
 
 ---
 ## 4. Preguntas de análisis
