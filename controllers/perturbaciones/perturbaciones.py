@@ -11,54 +11,44 @@ right_motor.setPosition(float('inf'))
 left_motor.setVelocity(0.0)
 right_motor.setVelocity(0.0)
 
-pen = robot.getDevice('pen')
-pen.write(True)
-pen.setInkColor(0x00FF00, 1.0)
-
-TIEMPO_LADO = 2.0
-TIEMPO_GIRO_90 = 0.85
-inicio_cuadrado = 14.0
+etapa_actual = 0  
 
 while robot.step(timestep) != -1:
     tiempo = robot.getTime()
     vl_base = 0.0
     vr_base = 0.0
-    aplicar_ruido = False
+    aplicar_ruido = True
     
     if tiempo < 3.0:
+        if etapa_actual == 0:
+            print(f"\nETAPA {etapa_actual + 1}: LÍNEA RECTA (Con ruido)")
+            etapa_actual += 1
         vl_base = 4.0
         vr_base = 4.0
-        aplicar_ruido = True
+        
     elif tiempo < 7.0:
+        if etapa_actual == 1:
+            print(f"\nETAPA {etapa_actual + 1}: CURVA (Con ruido)")
+            etapa_actual += 1
         vl_base = 5.0
-        vr_base = 2.0
+        vr_base = 5.5
+        
     elif tiempo < 13.0:
+        if etapa_actual == 2:
+            print(f"\nETAPA {etapa_actual + 1}: CÍRCULO (Con ruido)")
+            etapa_actual += 1
         vl_base = 4.0
         vr_base = 0.0
-        aplicar_ruido = True
-    elif tiempo < inicio_cuadrado:
-        vl_base = 0.0
-        vr_base = 0.0
-    else:
-        tiempo_relativo = tiempo - inicio_cuadrado
-        duracion_ciclo = TIEMPO_LADO + TIEMPO_GIRO_90
-        tiempo_en_ciclo = tiempo_relativo % duracion_ciclo
-        ciclo_actual = int(tiempo_relativo / duracion_ciclo)
         
-        if ciclo_actual < 4:
-            if tiempo_en_ciclo < TIEMPO_LADO:
-                vl_base = 4.0
-                vr_base = 4.0
-            else:
-                vl_base = -3.0
-                vr_base = 3.0
-        else:
-            vl_base = 0.0
-            vr_base = 0.0
+    else:
+        left_motor.setVelocity(0.0)
+        right_motor.setVelocity(0.0)
+        print("\n\nFinalizó el recorrido con perturbaciones :)")
+        break
 
     if aplicar_ruido:
-        vl_base += random.uniform(-1.5, 1.5)
-        vr_base += random.uniform(-1.5, 1.5)
+        vl_base += random.uniform(-0.1, 0.1)
+        vr_base += random.uniform(-0.1, 0.1)
 
     left_motor.setVelocity(vl_base)
     right_motor.setVelocity(vr_base)
